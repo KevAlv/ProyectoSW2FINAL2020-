@@ -1,0 +1,28 @@
+extends ../layout
+
+block content
+  a(href='./bicicletas') Volver
+
+  br
+  br
+  br
+
+  form(action='/bicicletas/create' method='post')
+    p
+      | Id: 
+      input(type='text' name='id' size='40')
+    p
+      | Color: 
+      input(type='text' name='color' min='1900')
+    p
+      | Modelo: 
+      input(type='text' name='modelo' min='1900')
+    p
+      | Latitud: 
+      input(type='text' name='lat' min='1900')
+    p
+      | Longitud: 
+      input(type='text' name='lng' min='1900')
+    br
+    br
+    input.btn(type="submit", value="Ok")
